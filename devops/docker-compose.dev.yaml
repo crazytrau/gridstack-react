@@ -1,0 +1,22 @@
+version: "3"
+services:
+  vite-gridstack-dev:
+    image: vite-gridstack-dev
+    container_name: vite-gridstack-dev
+    build:
+      context: ../src
+      dockerfile: Dockerfile.dev
+    volumes:
+      - '../src:/home/app'
+      - '/home/app/node_modules'
+    ports:
+      - 3816:5173
+    networks:
+      - crazytrau-net
+    command: -f /dev/null
+    entrypoint: /usr/bin/tail
+    tty: true
+
+networks:
+  crazytrau-net:
+    driver: bridge

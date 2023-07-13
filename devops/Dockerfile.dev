@@ -1,0 +1,7 @@
+FROM node:20.4.0
+
+ENV CONTAINER_PATH=/home/app
+WORKDIR $CONTAINER_PATH
+RUN npm i -g pnpm
+
+ENTRYPOINT sleep infinity
