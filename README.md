@@ -1,5 +1,6 @@
 # Gridstack + react
 react+vite+gridstack
+![image](https://github.com/crazytrau/gridstack-react/assets/13588794/e11b707a-eb8b-4070-a766-df4e88ff4b50)
 
 # Quick start
 1. clone source
