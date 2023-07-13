@@ -5,7 +5,7 @@ services:
     container_name: vite-gridstack-dev
     build:
       context: ../src
-      dockerfile: Dockerfile.dev
+      dockerfile: ../devops/Dockerfile.dev
     volumes:
       - '../src:/home/app'
       - '/home/app/node_modules'

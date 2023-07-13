@@ -1,0 +1,16 @@
+version: "3"
+services:
+  vite-gridstack:
+    image: vite-gridstack
+    container_name: vite-gridstack
+    build:
+      context: ..
+      dockerfile: devops/Dockerfile
+    ports:
+      - 3816:3000
+    networks:
+      - crazytrau-net
+
+networks:
+  crazytrau-net:
+    driver: bridge
